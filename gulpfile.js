@@ -11,7 +11,7 @@ var gulp         = require('gulp'), // Подключаем Gulp
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 	upmodul 	 = require("gulp-update-modul");// Подключаем пакет для обновления всех установленных модулей
-	spritesmith = require('gulp.spritesmith');// 
+	spritesmith  = require('gulp.spritesmith');// 
 
 
 gulp.task('sass', function(){ // Создаем таск Sass
@@ -77,11 +77,11 @@ gulp.task('clear', function (callback) {
 });
 
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('img/imgForSprite/*.png').pipe(spritesmith({
+  var spriteData = gulp.src('app/img/imgForSprite/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.scss'
   }));
-  return spriteData.pipe(gulp.dest('img/sprites/'));
+  return spriteData.pipe(gulp.dest('app/img/sprites/'));
 });
 
 gulp.task('default', ['watch']);

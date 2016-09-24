@@ -1,11 +1,159 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
+a {
+  color: #fff;
+  text-decoration: none; }
+
+a:hover {
+  color: #bc8220;
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.hidden {
+  display: none; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
 body {
+  width: 100%;
+  margin: 0 auto;
+  background: #1a0f0d url("../img/bg.jpg");
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 14px; }
+
+.wrapper {
+  width: 1400px;
   margin: 0 auto; }
+
+.top-line {
+  width: 100%;
+  padding: 45px 25px;
+  color: #FFF;
+  line-height: 23px; }
+  .top-line_sub-block {
+    float: left;
+    width: 25%;
+    color: #FFF; }
+  .top-line_booking {
+    background-image: url(../img/sprites/sprite.png);
+    background-position: 0px 0px;
+    width: 32px;
+    height: 35px;
+    float: left;
+    margin: 0 20px 0 25px; }
+  .top-line a {
+    padding-bottom: 3px;
+    font-family: "GeorgiaBold", sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    border-bottom: 1px solid #e5af51;
+    text-decoration: none;
+    line-height: 36px; }
+  .top-line_address {
+    background-image: url(../img/sprites/sprite.png);
+    background-position: -92px 0px;
+    width: 26px;
+    height: 34px;
+    float: left;
+    margin: 0 20px 0 25px; }
+  .top-line .address {
+    margin-top: -5px; }
+  .top-line_phones {
+    background-image: url(../img/sprites/sprite.png);
+    background-position: -64px 0px;
+    width: 28px;
+    height: 35px;
+    float: left;
+    margin: 0 20px 0 25px; }
+  .top-line .phones {
+    margin-top: -5px;
+    font-size: 18px; }
+    .top-line .phones li {
+      line-height: 23px; }
+      .top-line .phones li .phone-part {
+        color: #f4bc71; }
+      .top-line .phones li .phone-desc {
+        display: inline-block;
+        margin-left: 18px;
+        font-size: 12px; }
+  .top-line .lang {
+    margin-top: 10px;
+    text-align: right;
+    text-transform: uppercase; }
+    .top-line .lang li {
+      display: inline-block;
+      border-left: 2px solid #844233;
+      padding: 0 7px;
+      line-height: 16px; }
+      .top-line .lang li:first-child {
+        border-left: none; }
+      .top-line .lang li a {
+        color: #E7B055;
+        font-family: "RobotoRegular", sans-serif;
+        font-size: 16px;
+        border-bottom: none;
+        line-height: 16px;
+        padding-bottom: 0; }
+        .top-line .lang li a:hover, .top-line .lang li a:focus {
+          color: #FFFAFA; }
 
 /*==========  Desktop First Method  ========== */
 /* Small Devices, Tablets */

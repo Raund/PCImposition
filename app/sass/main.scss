@@ -1,15 +1,128 @@
 @import "bourbon";
 @import "vars.scss";
-@import "retina.scss";
+@import "sprite.scss";
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+  color: $lnk-mnu-hover;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hidden {
+  display: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {clear: both;}
+
 body{
+  width: 100%;
   margin: 0 auto;
-  
+  background: #1a0f0d url('../img/bg.jpg');
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 14px;
+}
+
+.wrapper{
+	width: 1400px;
+	margin: 0 auto;
+}
+.top-line{
+	width: 100%;
+	padding: 45px 25px;
+	color: #FFF;
+	line-height: 23px;
+	&_sub-block{
+		float: left;
+		width: 25%;
+		color: #FFF;
+	}
+	&_booking{
+		@include sprite($booking);
+		float: left;
+		margin: 0 20px 0 25px;
+	}
+	a{
+		padding-bottom: 3px;
+		font-family: "GeorgiaBold", sans-serif;
+		font-size: 16px;
+		color: #FFF;
+		border-bottom: 1px solid #e5af51;
+		text-decoration: none;
+		line-height: 36px;
+	}
+	&_address{
+		@include sprite($map-label);
+		float: left;
+		margin: 0 20px 0 25px;
+	}
+	.address{
+		margin-top: -5px;
+	}
+	&_phones{
+		@include sprite($phone);
+		float: left;
+		margin: 0 20px 0 25px;
+	}
+	.phones{
+		margin-top: -5px;
+		font-size: 18px;
+		li{
+			line-height: 23px;
+			.phone-part{
+				color: #f4bc71;
+			}
+			.phone-desc{
+				display: inline-block;
+				margin-left: 18px;
+				font-size: 12px;
+			}
+		}
+	}
+	.lang{
+		margin-top: 10px;
+		text-align: right;
+		text-transform: uppercase;
+		li{
+			display: inline-block;
+			border-left: 2px solid #844233;
+			padding: 0 7px;
+			line-height: 16px;
+			&:first-child{
+				border-left: none;
+			}
+			a{
+				color: #E7B055;
+				font-family: "RobotoRegular", sans-serif;
+				font-size: 16px;
+				border-bottom: none;
+				line-height: 16px;
+				padding-bottom: 0;
+				&:hover, &:focus{
+					color: #FFFAFA;
+				}
+			}
+		}
+	}
 }
 
 //ALWAYS END

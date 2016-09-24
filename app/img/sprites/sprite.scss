@@ -1,0 +1,217 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$booking-name: 'booking';
+$booking-x: 0px;
+$booking-y: 0px;
+$booking-offset-x: 0px;
+$booking-offset-y: 0px;
+$booking-width: 32px;
+$booking-height: 35px;
+$booking-total-width: 118px;
+$booking-total-height: 96px;
+$booking-image: 'sprite.png';
+$booking: (0px, 0px, 0px, 0px, 32px, 35px, 118px, 96px, 'sprite.png', 'booking', );
+$flower-left-name: 'flower-left';
+$flower-left-x: 44px;
+$flower-left-y: 66px;
+$flower-left-offset-x: -44px;
+$flower-left-offset-y: -66px;
+$flower-left-width: 20px;
+$flower-left-height: 20px;
+$flower-left-total-width: 118px;
+$flower-left-total-height: 96px;
+$flower-left-image: 'sprite.png';
+$flower-left: (44px, 66px, -44px, -66px, 20px, 20px, 118px, 96px, 'sprite.png', 'flower-left', );
+$flower-right-dark-name: 'flower-right-dark';
+$flower-right-dark-x: 64px;
+$flower-right-dark-y: 66px;
+$flower-right-dark-offset-x: -64px;
+$flower-right-dark-offset-y: -66px;
+$flower-right-dark-width: 19px;
+$flower-right-dark-height: 19px;
+$flower-right-dark-total-width: 118px;
+$flower-right-dark-total-height: 96px;
+$flower-right-dark-image: 'sprite.png';
+$flower-right-dark: (64px, 66px, -64px, -66px, 19px, 19px, 118px, 96px, 'sprite.png', 'flower-right-dark', );
+$flower-right-name: 'flower-right';
+$flower-right-x: 24px;
+$flower-right-y: 66px;
+$flower-right-offset-x: -24px;
+$flower-right-offset-y: -66px;
+$flower-right-width: 20px;
+$flower-right-height: 20px;
+$flower-right-total-width: 118px;
+$flower-right-total-height: 96px;
+$flower-right-image: 'sprite.png';
+$flower-right: (24px, 66px, -24px, -66px, 20px, 20px, 118px, 96px, 'sprite.png', 'flower-right', );
+$letter-contact-name: 'letter-contact';
+$letter-contact-x: 61px;
+$letter-contact-y: 35px;
+$letter-contact-offset-x: -61px;
+$letter-contact-offset-y: -35px;
+$letter-contact-width: 29px;
+$letter-contact-height: 22px;
+$letter-contact-total-width: 118px;
+$letter-contact-total-height: 96px;
+$letter-contact-image: 'sprite.png';
+$letter-contact: (61px, 35px, -61px, -35px, 29px, 22px, 118px, 96px, 'sprite.png', 'letter-contact', );
+$letter-name: 'letter';
+$letter-x: 29px;
+$letter-y: 35px;
+$letter-offset-x: -29px;
+$letter-offset-y: -35px;
+$letter-width: 32px;
+$letter-height: 24px;
+$letter-total-width: 118px;
+$letter-total-height: 96px;
+$letter-image: 'sprite.png';
+$letter: (29px, 35px, -29px, -35px, 32px, 24px, 118px, 96px, 'sprite.png', 'letter', );
+$location-contact-name: 'location-contact';
+$location-contact-x: 32px;
+$location-contact-y: 0px;
+$location-contact-offset-x: -32px;
+$location-contact-offset-y: 0px;
+$location-contact-width: 32px;
+$location-contact-height: 32px;
+$location-contact-total-width: 118px;
+$location-contact-total-height: 96px;
+$location-contact-image: 'sprite.png';
+$location-contact: (32px, 0px, -32px, 0px, 32px, 32px, 118px, 96px, 'sprite.png', 'location-contact', );
+$map-label-contact-name: 'map-label-contact';
+$map-label-contact-x: 92px;
+$map-label-contact-y: 34px;
+$map-label-contact-offset-x: -92px;
+$map-label-contact-offset-y: -34px;
+$map-label-contact-width: 24px;
+$map-label-contact-height: 32px;
+$map-label-contact-total-width: 118px;
+$map-label-contact-total-height: 96px;
+$map-label-contact-image: 'sprite.png';
+$map-label-contact: (92px, 34px, -92px, -34px, 24px, 32px, 118px, 96px, 'sprite.png', 'map-label-contact', );
+$map-label-name: 'map-label';
+$map-label-x: 92px;
+$map-label-y: 0px;
+$map-label-offset-x: -92px;
+$map-label-offset-y: 0px;
+$map-label-width: 26px;
+$map-label-height: 34px;
+$map-label-total-width: 118px;
+$map-label-total-height: 96px;
+$map-label-image: 'sprite.png';
+$map-label: (92px, 0px, -92px, 0px, 26px, 34px, 118px, 96px, 'sprite.png', 'map-label', );
+$phone-contact-name: 'phone-contact';
+$phone-contact-x: 0px;
+$phone-contact-y: 35px;
+$phone-contact-offset-x: 0px;
+$phone-contact-offset-y: -35px;
+$phone-contact-width: 29px;
+$phone-contact-height: 31px;
+$phone-contact-total-width: 118px;
+$phone-contact-total-height: 96px;
+$phone-contact-image: 'sprite.png';
+$phone-contact: (0px, 35px, 0px, -35px, 29px, 31px, 118px, 96px, 'sprite.png', 'phone-contact', );
+$phone-name: 'phone';
+$phone-x: 64px;
+$phone-y: 0px;
+$phone-offset-x: -64px;
+$phone-offset-y: 0px;
+$phone-width: 28px;
+$phone-height: 35px;
+$phone-total-width: 118px;
+$phone-total-height: 96px;
+$phone-image: 'sprite.png';
+$phone: (64px, 0px, -64px, 0px, 28px, 35px, 118px, 96px, 'sprite.png', 'phone', );
+$photo-name: 'photo';
+$photo-x: 0px;
+$photo-y: 66px;
+$photo-offset-x: 0px;
+$photo-offset-y: -66px;
+$photo-width: 24px;
+$photo-height: 30px;
+$photo-total-width: 118px;
+$photo-total-height: 96px;
+$photo-image: 'sprite.png';
+$photo: (0px, 66px, 0px, -66px, 24px, 30px, 118px, 96px, 'sprite.png', 'photo', );
+$spritesheet-width: 118px;
+$spritesheet-height: 96px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($booking, $flower-left, $flower-right-dark, $flower-right, $letter-contact, $letter, $location-contact, $map-label-contact, $map-label, $phone-contact, $phone, $photo, );
+$spritesheet: (118px, 96px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../img/sprites/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
