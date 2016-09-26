@@ -79,6 +79,11 @@ body {
   font-family: "RobotoRegular", sans-serif;
   font-size: 0.875em; }
 
+h1 {
+  font-size: 25px;
+  font-family: "GeorgiaBoldItalic", sans-serif;
+  color: #251D1B; }
+
 .wrapper {
   width: 1400px;
   margin: 0 auto; }
@@ -195,6 +200,113 @@ body {
     background-position: 0px -20px;
     width: 198px;
     height: 20px; }
+
+.grey-block {
+  padding: 85px 65px 105px 65px;
+  background: #251d1b;
+  border-bottom: 1px solid #514948; }
+  .grey-block h1 {
+    color: #FFF5E5;
+    margin-bottom: 40px; }
+  .grey-block .hotel-photo {
+    padding-left: 40px;
+    padding-right: 30px;
+    float: left; }
+    .grey-block .hotel-photo .photo {
+      background-image: url(../img/sprites/sprite.png);
+      background-position: -78px -75px;
+      width: 24px;
+      height: 30px;
+      float: left;
+      margin-left: -40px; }
+    .grey-block .hotel-photo .gallery-ft {
+      width: 450px; }
+      .grey-block .hotel-photo .gallery-ft li {
+        float: left;
+        width: 150px;
+        height: 100px; }
+        .grey-block .hotel-photo .gallery-ft li a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+  .grey-block .callback-form {
+    float: left;
+    padding-left: 50px; }
+    .grey-block .callback-form .letter {
+      background-image: url(../img/sprites/sprite.png);
+      background-position: -93px -40px;
+      width: 32px;
+      height: 24px;
+      float: left;
+      margin-left: -50px;
+      margin-right: 10px; }
+    .grey-block .callback-form #contactform input, .grey-block .callback-form #contactform textarea {
+      margin-top: 20px;
+      background-color: inherit;
+      border: none;
+      border-bottom: 1px solid #645545;
+      color: #F5F5F9;
+      font-family: "VerdanaRegular", sans-serif;
+      font-size: 16px; }
+    .grey-block .callback-form #contactform input {
+      width: 240px;
+      height: 35px; }
+    .grey-block .callback-form #contactform input[type="submit"] {
+      width: 140px;
+      height: 40px;
+      margin-top: 50px;
+      border: 1px solid #645545;
+      color: #A9A9A9; }
+    .grey-block .callback-form #contactform input[type="submit"]:hover {
+      background-color: #5f492b;
+      cursor: pointer; }
+    .grey-block .callback-form #contactform textarea {
+      width: 400px;
+      height: 28px;
+      margin-left: 50px;
+      margin-bottom: -10px; }
+
+.footer-mnu-block {
+  width: 100%;
+  padding-top: 70px; }
+  .footer-mnu-block .logo-wrap {
+    float: left;
+    margin: -50px 55px 0 30px;
+    text-align: center; }
+  .footer-mnu-block .logo-title {
+    display: inline-block;
+    color: #ffefd4;
+    font-family: "RobotoLight", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase; }
+  .footer-mnu-block ul {
+    float: left;
+    margin-right: 60px; }
+    .footer-mnu-block ul li a {
+      color: #bf9258;
+      line-height: 30px; }
+    .footer-mnu-block ul li:first-child a {
+      font-family: "GeorgiaBold", sans-serif;
+      color: #ecbb7b;
+      line-height: 49px; }
+  .footer-mnu-block .ft-line {
+    position: relative;
+    left: 250px;
+    margin-top: -20px;
+    width: 1085px;
+    height: 1px;
+    background-color: #392420; }
+    .footer-mnu-block .ft-line .flower-right-dark {
+      background-image: url(../img/sprites/sprite.png);
+      background-position: -102px -75px;
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      right: 0;
+      top: -9px; }
+
+footer .top-line_sub-block {
+  float: right; }
 
 /*==========  Desktop First Method  ========== */
 /* Small Devices, Tablets */
