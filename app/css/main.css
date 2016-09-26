@@ -77,7 +77,7 @@ body {
   margin: 0 auto;
   background: #1a0f0d url("../img/bg.jpg");
   font-family: "RobotoRegular", sans-serif;
-  font-size: 14px; }
+  font-size: 0.875em; }
 
 .wrapper {
   width: 1400px;
@@ -85,7 +85,7 @@ body {
 
 .top-line {
   width: 100%;
-  padding: 45px 25px;
+  padding: 3.21429% 1.78571%;
   color: #FFF;
   line-height: 23px; }
   .top-line_sub-block {
@@ -94,7 +94,7 @@ body {
     color: #FFF; }
   .top-line_booking {
     background-image: url(../img/sprites/sprite.png);
-    background-position: 0px 0px;
+    background-position: 0px -40px;
     width: 32px;
     height: 35px;
     float: left;
@@ -109,7 +109,7 @@ body {
     line-height: 36px; }
   .top-line_address {
     background-image: url(../img/sprites/sprite.png);
-    background-position: -92px 0px;
+    background-position: -28px -75px;
     width: 26px;
     height: 34px;
     float: left;
@@ -118,7 +118,7 @@ body {
     margin-top: -5px; }
   .top-line_phones {
     background-image: url(../img/sprites/sprite.png);
-    background-position: -64px 0px;
+    background-position: 0px -75px;
     width: 28px;
     height: 35px;
     float: left;
@@ -154,6 +154,47 @@ body {
         padding-bottom: 0; }
         .top-line .lang li a:hover, .top-line .lang li a:focus {
           color: #FFFAFA; }
+
+.mnu-block {
+  width: 100%;
+  padding: 6.42857% 0 2.5% 0;
+  background: #FFF5E5;
+  text-align: center; }
+  .mnu-block nav a {
+    margin-right: 75px;
+    border-bottom: 3px solid #bcb1a4;
+    padding-bottom: 8px;
+    color: #181818;
+    font-family: "GeorgiaBold", sans-serif;
+    font-size: 16px; }
+    .mnu-block nav a:hover, .mnu-block nav a:active {
+      color: #bc8220;
+      border-bottom: 3px solid #cfa56b; }
+    .mnu-block nav a:last-child {
+      margin-right: 0; }
+    .mnu-block nav a:nth-child(3) {
+      margin-right: 300px; }
+  .mnu-block .logo-wrap {
+    margin-top: -90px; }
+  .mnu-block .logo-title {
+    display: inline-block;
+    margin: 5px 40px 0 40px;
+    color: #e3ad4d;
+    font-family: "RobotoLight", sans-serif;
+    font-size: 35px;
+    text-transform: uppercase; }
+  .mnu-block .flower-left, .mnu-block .flower-right {
+    display: inline-block; }
+  .mnu-block .flower-left {
+    background-image: url(../img/sprites/sprite.png);
+    background-position: 0px 0px;
+    width: 198px;
+    height: 20px; }
+  .mnu-block .flower-right {
+    background-image: url(../img/sprites/sprite.png);
+    background-position: 0px -20px;
+    width: 198px;
+    height: 20px; }
 
 /*==========  Desktop First Method  ========== */
 /* Small Devices, Tablets */

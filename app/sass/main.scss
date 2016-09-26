@@ -39,16 +39,16 @@ body{
   margin: 0 auto;
   background: #1a0f0d url('../img/bg.jpg');
   font-family: "RobotoRegular", sans-serif;
-  font-size: 14px;
+  font-size: em(14px);
 }
 
 .wrapper{
-	width: 1400px;
+	width: $site-width;
 	margin: 0 auto;
 }
 .top-line{
 	width: 100%;
-	padding: 45px 25px;
+	padding: 45px/$site-width*100% 25px/$site-width*100%;
 	color: #FFF;
 	line-height: 23px;
 	&_sub-block{
@@ -122,6 +122,53 @@ body{
 				}
 			}
 		}
+	}
+}
+
+.mnu-block{
+	width: 100%;
+	padding: 90px/$site-width*100% 0 35px/$site-width*100% 0;
+	background: #FFF5E5;
+	text-align: center;
+	nav{
+		a{
+			margin-right: 75px;
+			border-bottom: 3px solid #bcb1a4;
+			padding-bottom: 8px;			
+			color: $lnk-mnu;
+			font-family: "GeorgiaBold", sans-serif;
+			font-size: 16px;
+			&:hover, &:active{
+				color: $lnk-mnu-hover;
+				border-bottom: 3px solid #cfa56b;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+			&:nth-child(3){
+				margin-right: 300px;
+			}
+		}
+	}
+	.logo-wrap{
+		margin-top: -90px;
+	}
+	.logo-title{
+		display: inline-block;
+		margin: 5px 40px 0 40px;
+		color: #e3ad4d;
+		font-family: "RobotoLight", sans-serif;
+		font-size: 35px;
+		text-transform: uppercase;
+	}
+	.flower-left, .flower-right{
+		display: inline-block;
+	}
+	.flower-left{
+		@include sprite($bg-logo-title-left);
+	}
+	.flower-right{
+		@include sprite($bg-logo-title-right);
 	}
 }
 
