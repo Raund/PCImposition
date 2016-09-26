@@ -85,12 +85,12 @@ h1 {
   color: #251D1B; }
 
 .wrapper {
-  width: 1400px;
+  width: 1200px;
   margin: 0 auto; }
 
 .top-line {
   width: 100%;
-  padding: 3.21429% 1.78571%;
+  padding: 3.75% 2.08333%;
   color: #FFF;
   line-height: 23px; }
   .top-line_sub-block {
@@ -162,7 +162,7 @@ h1 {
 
 .mnu-block {
   width: 100%;
-  padding: 6.42857% 0 2.5% 0;
+  padding: 7.5% 0 2.91667% 0;
   background: #FFF5E5;
   text-align: center; }
   .mnu-block nav a {
@@ -192,12 +192,12 @@ h1 {
     display: inline-block; }
   .mnu-block .flower-left {
     background-image: url(../img/sprites/sprite.png);
-    background-position: 0px 0px;
+    background-position: 0px -20px;
     width: 198px;
     height: 20px; }
   .mnu-block .flower-right {
     background-image: url(../img/sprites/sprite.png);
-    background-position: 0px -20px;
+    background-position: 0px 0px;
     width: 198px;
     height: 20px; }
 
@@ -305,8 +305,68 @@ h1 {
       right: 0;
       top: -9px; }
 
+.booking {
+  width: 100%;
+  padding: 4.16667% 5% 4.16667% 12.5%;
+  background-color: #251d1b; }
+
 footer .top-line_sub-block {
   float: right; }
+
+.content {
+  width: 100%;
+  padding: 5% 5.83333%;
+  background-color: #fff5e5; }
+  .content span {
+    font-size: 38px;
+    font-family: "GeorgiaBoldItalic", sans-serif;
+    color: #251D1B;
+    line-height: 49px; }
+  .content li {
+    width: 380px;
+    float: left;
+    margin-top: 50px;
+    margin-right: 5.41667%; }
+    .content li:nth-child(3n) {
+      margin-right: 0; }
+    .content li .img-block {
+      width: 100%;
+      height: 205px; }
+    .content li .describe-block {
+      margin-top: 5px;
+      padding: 35px 30px 40px;
+      border: 1px solid #e5af51; }
+      .content li .describe-block section {
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "RobotoItalic", sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        overflow: hidden; }
+      .content li .describe-block a {
+        position: relative;
+        font-size: 18px;
+        line-height: 24px;
+        font-family: "GeorgiaBoldItalic", sans-serif;
+        color: #ae7719; }
+        .content li .describe-block a .arrow-right {
+          background-image: url(../img/sprites/sprite.png);
+          background-position: -121px -75px;
+          width: 7px;
+          height: 13px;
+          position: absolute;
+          bottom: 5px;
+          left: 115px; }
+        .content li .describe-block a:hover {
+          text-decoration: underline; }
+  .content .hotel-describe {
+    margin-top: 75px; }
+    .content .hotel-describe section {
+      margin-top: 30px;
+      font-family: "RobotoItalic", sans-serif;
+      font-size: 16px;
+      line-height: 30px; }
 
 /*==========  Desktop First Method  ========== */
 /* Small Devices, Tablets */
