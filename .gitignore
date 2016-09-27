@@ -1,4 +1,5 @@
 /node_modules/*
+/bower_components/*
 /END/*
 .sublime-gulp.cache
 .sublime-gulp.log

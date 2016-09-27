@@ -17,6 +17,16 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="libs/bootstrap-grid/dist/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/bxslider/webstudio-bxslider.css">
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<SCRIPT>
+		var I18n = {
+			'details': 'Подробнее'
+		};
+	</SCRIPT>
+
 	</head>
 <body>
 
@@ -76,7 +86,39 @@
 				
 			</div>
 		</header>
-		<div class="booking"></div>
+
+		<div class="slider">
+			
+			<ul class="bxslider">
+				<li><div class="slider-content"></div><img src="img/slide-1.jpg" title="Предусматриваем текст слайда c заголовком" sub-title="С кратким описанием и кнопкой подробнее" link="google.com" style="width: 1400px; height: 500px;" /></li>
+				<li><div class="slider-content"></div><img src="img/slide-2.jpg" title="Предусматриваем текст слайда c заголовком" sub-title="С кратким описанием и кнопкой подробнее" link="google.com" style="width: 1400px; height: 500px;" /></li>
+			</ul>
+
+		</div>
+
+		<div class="booking clearfix">
+
+			<div class="key"><img src="img/key.png" alt=""></div>
+
+			<div class="fast-booking">
+				<h2>Быстрое</h2>
+				<h2 class="second-line">Бронирование</h2>
+			</div>
+			
+			<form id="booking-form">
+
+				<span class="for-arrival-date">Дата заезда:</span>
+				<input type="text" id="from" name="from" class="arrival-date">
+
+				<span class="for-departure-date">Дата выезда:</span>
+				<input type="text" id="to" name="to" class="departure-date">
+
+				<input name="booking-btn" id="booking-btn" value="Бронировать" type="submit"> 
+
+			</form>
+
+		</div>
+
 		<div class="content">
 			<span>У нас вы найдете:</span>
 			<ul class="clearfix">
@@ -249,8 +291,12 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	<script src="libs/jquery/dist/jquery.js"></script>
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/bxslider/webstudio-bxslider.js"></script>
 	<script src="js/common.js"></script>
+
+	<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </body>
 </html>
