@@ -23,6 +23,12 @@
   src: url("../fonts/RobotoItalic/RobotoItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoItalic/RobotoItalic.woff") format("woff"), url("../fonts/RobotoItalic/RobotoItalic.ttf") format("truetype"); }
 
 @font-face {
+  font-family: "RobotoBlack";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoBlack/RobotoBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBlack/RobotoBlack.woff") format("woff"), url("../fonts/RobotoBlack/RobotoBlack.ttf") format("truetype"); }
+
+@font-face {
   font-family: "GeorgiaBold";
   font-style: normal;
   font-weight: normal;

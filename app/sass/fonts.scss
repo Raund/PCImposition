@@ -4,6 +4,7 @@
 @include font-face("RobotoBold", "../fonts/RobotoBold/RobotoBold", $file-formats: eot woff ttf);
 @include font-face("RobotoLight", "../fonts/RobotoLight/RobotoLight", $file-formats: eot woff ttf);
 @include font-face("RobotoItalic", "../fonts/RobotoItalic/RobotoItalic", $file-formats: eot woff ttf);
+@include font-face("RobotoBlack", "../fonts/RobotoBlack/RobotoBlack", $file-formats: eot woff ttf);
 
 @include font-face("GeorgiaBold", "../fonts/GeorgiaBold/GeorgiaBold", $file-formats:ttf);
 @include font-face("GeorgiaBoldItalic", "../fonts/GeorgiaBoldItalic/GeorgiaBoldItalic", $file-formats:ttf);
