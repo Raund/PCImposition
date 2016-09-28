@@ -1,7 +1,7 @@
 @import "bourbon";
 @import "vars.scss";
 @import "sprite.scss";
-
+/* ----------- Main Styles ------------ */
 *{
   box-sizing: border-box;
   margin: 0;
@@ -53,10 +53,14 @@ h2{
 	font-family: "GeorgiaBoldItalic", sans-serif;
 	color: #fffafa;
 }
+
 .wrapper{
 	width: $site-width;
 	margin: 0 auto;
 }
+/* ----------- End Main Styles ------------ */
+
+/* ----------- Header ------------ */
 .top-line{
 	width: 100%;
 	padding: 45px/$site-width*100% 25px/$site-width*100%;
@@ -190,136 +194,9 @@ h2{
 		@include sprite($bg-logo-title-right);
 	}
 }
+/* ----------- End Header ------------ */
 
-.grey-block{
-	padding: 85px 65px 105px 65px;
-	background: #251d1b;
-	border-bottom: 1px solid #514948;
-	h1{
-		color: #FFF5E5;
-		margin-bottom: 40px;
-	}
-	.hotel-photo{
-		width: 41%;
-		padding-left: 40px;
-		padding-right: 30px;
-		float: left;
-		.photo{
-			@include sprite($photo);
-			float: left;
-			margin-left: -40px;
-		}
-		.gallery-ft{
-			width: 450px;
-			li{
-				float: left;
-				width: 150px;
-				height: 100px;
-				a{
-					display: block;
-					width: 100%;
-					height: 100%;
-				}
-			}
-		}
-	}
-	.callback-form{
-		width: 59%;
-		float: left;
-		padding-left: 4%;
-		.letter{
-			@include sprite($letter);
-			float: left;
-			margin-left: -50px;
-			margin-right: 10px;
-		}
-		#contactform{
-			input, textarea{		
-				margin-top: 20px;
-				background-color: inherit;
-				border: none;
-				border-bottom: 1px solid #645545;
-				color: #F5F5F9;
-				font-family: "VerdanaRegular", sans-serif;
-				font-size: 16px;
-			}
-			input{
-				width: 36%;
-				height: 35px;
-			}
-			input[type="submit"]{
-				width: 140px;
-				height: 40px;
-				margin-top: 50px;
-				border: 1px solid #645545;
-				color: #A9A9A9;
-			}
-			input[type="submit"]:hover{
-				background-color: #5f492b;
-				cursor: pointer;
-			}
-			textarea{
-				width: 56%;
-				height: 28px;
-				margin-left: 7%;
-				margin-bottom: -10px;
-			}
-		}
-	}
-}
-
-.footer-mnu-block{
-	width: 100%;
-	padding-top: 70px;
-	.logo-wrap{
-		float: left;
-		margin: -50px 55px 0 30px;
-		text-align: center;
-	}
-	.logo-title{
-		display: inline-block;
-		color: #ffefd4;
-		font-family: "RobotoLight", sans-serif;
-		font-size: 25px;
-		text-transform: uppercase;
-	}
-	ul{
-		float: left;
-		margin-right: 60px;
-		li{
-			a{
-				color: $lnk-submnu-ft;
-				line-height: 30px;
-				&:hover{
-					color: $lnk-mnu-ft-hover;
-				}	
-			}
-			&:first-child a{
-				font-family: "GeorgiaBold", sans-serif;
-				color: $lnk-mnu-ft;
-				line-height: 49px;
-				&:hover{
-					color: $lnk-mnu-ft-hover;
-				}	
-			}
-		}
-	}
-	.ft-line{
-		position: relative;
-		left: 250px;
-		margin-top: -20px;
-		width: 77.5%;
-		height: 1px;
-		background-color: #392420;
-		.flower-right-dark{
-			@include sprite($flower-right-dark);
-			position: absolute;
-			right: 0;
-			top: -9px;
-		}
-	}
-}
-
+/* ------------ Page Main ------------- */
 .slider{
 	width: 100%;
 	height: 470px;
@@ -441,15 +318,7 @@ h2{
 	}
 }
 
-footer{
-	.top-line{
-		&_sub-block{
-			float: right;
-		}
-	}
-}
-
-.content{
+.content-main{
 	width: 100%;
 	padding: 60px/$site-width*100% 70px/$site-width*100%;
 	background-color: #fff5e5;
@@ -512,5 +381,154 @@ footer{
 		}
 	}
 }
+/* ------------ End Page Main ------------- */
+
+/* -------- Page Rooms ----------- */
+.content-rooms{
+	width: 100%;
+	padding: 30px/1400px*100% 60px/1400px*100% 60px/1400px*100%;
+	background-color: #FFF;
+}
+/* -------- End Page Rooms ----------- */
+
+/* ----------- Footer ------------ */
+.grey-block{
+	padding: 85px 65px 105px 65px;
+	background: #251d1b;
+	border-bottom: 1px solid #514948;
+	h1{
+		color: #FFF5E5;
+		margin-bottom: 40px;
+	}
+	.hotel-photo{
+		width: 41%;
+		padding-left: 40px;
+		padding-right: 30px;
+		float: left;
+		.photo{
+			@include sprite($photo);
+			float: left;
+			margin-left: -40px;
+		}
+		.gallery-ft{
+			width: 450px;
+			li{
+				float: left;
+				width: 150px;
+				height: 100px;
+				a{
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+	.callback-form{
+		width: 59%;
+		float: left;
+		padding-left: 4%;
+		.letter{
+			@include sprite($letter);
+			float: left;
+			margin-left: -50px;
+			margin-right: 10px;
+		}
+		#contactform{
+			input, textarea{		
+				margin-top: 20px;
+				background-color: inherit;
+				border: none;
+				border-bottom: 1px solid #645545;
+				color: #F5F5F9;
+				font-family: "VerdanaRegular", sans-serif;
+				font-size: 16px;
+			}
+			input{
+				width: 36%;
+				height: 35px;
+			}
+			input[type="submit"]{
+				width: 140px;
+				height: 40px;
+				margin-top: 50px;
+				border: 1px solid #645545;
+				color: #A9A9A9;
+			}
+			input[type="submit"]:hover{
+				background-color: #5f492b;
+				cursor: pointer;
+			}
+			textarea{
+				width: 56%;
+				height: 28px;
+				margin-left: 7%;
+				margin-bottom: -10px;
+			}
+		}
+	}
+}
+
+footer{
+	.top-line{
+		&_sub-block{
+			float: right;
+		}
+	}
+}
+
+.footer-mnu-block{
+	width: 100%;
+	padding-top: 70px;
+	.logo-wrap{
+		float: left;
+		margin: -50px 55px 0 30px;
+		text-align: center;
+	}
+	.logo-title{
+		display: inline-block;
+		color: #ffefd4;
+		font-family: "RobotoLight", sans-serif;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+	ul{
+		float: left;
+		margin-right: 60px;
+		li{
+			a{
+				color: $lnk-submnu-ft;
+				line-height: 30px;
+				&:hover{
+					color: $lnk-mnu-ft-hover;
+				}	
+			}
+			&:first-child a{
+				font-family: "GeorgiaBold", sans-serif;
+				color: $lnk-mnu-ft;
+				line-height: 49px;
+				&:hover{
+					color: $lnk-mnu-ft-hover;
+				}	
+			}
+		}
+	}
+	.ft-line{
+		position: relative;
+		left: 250px;
+		margin-top: -20px;
+		width: 77.5%;
+		height: 1px;
+		background-color: #392420;
+		.flower-right-dark{
+			@include sprite($flower-right-dark);
+			position: absolute;
+			right: 0;
+			top: -9px;
+		}
+	}
+}
+/* ----------- End Footer ------------ */
+
 //ALWAYS END
 @import "media.scss";

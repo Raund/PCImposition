@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -43,6 +44,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+/* ----------- Main Styles ------------ */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -93,6 +95,8 @@ h2 {
   width: 1400px;
   margin: 0 auto; }
 
+/* ----------- End Main Styles ------------ */
+/* ----------- Header ------------ */
 .top-line {
   width: 100%;
   padding: 3.21429% 1.78571%;
@@ -211,116 +215,8 @@ h2 {
     width: 198px;
     height: 20px; }
 
-.grey-block {
-  padding: 85px 65px 105px 65px;
-  background: #251d1b;
-  border-bottom: 1px solid #514948; }
-  .grey-block h1 {
-    color: #FFF5E5;
-    margin-bottom: 40px; }
-  .grey-block .hotel-photo {
-    width: 41%;
-    padding-left: 40px;
-    padding-right: 30px;
-    float: left; }
-    .grey-block .hotel-photo .photo {
-      background-image: url(../img/sprites/sprite.png);
-      background-position: -78px -75px;
-      width: 24px;
-      height: 30px;
-      float: left;
-      margin-left: -40px; }
-    .grey-block .hotel-photo .gallery-ft {
-      width: 450px; }
-      .grey-block .hotel-photo .gallery-ft li {
-        float: left;
-        width: 150px;
-        height: 100px; }
-        .grey-block .hotel-photo .gallery-ft li a {
-          display: block;
-          width: 100%;
-          height: 100%; }
-  .grey-block .callback-form {
-    width: 59%;
-    float: left;
-    padding-left: 4%; }
-    .grey-block .callback-form .letter {
-      background-image: url(../img/sprites/sprite.png);
-      background-position: -93px -40px;
-      width: 32px;
-      height: 24px;
-      float: left;
-      margin-left: -50px;
-      margin-right: 10px; }
-    .grey-block .callback-form #contactform input, .grey-block .callback-form #contactform textarea {
-      margin-top: 20px;
-      background-color: inherit;
-      border: none;
-      border-bottom: 1px solid #645545;
-      color: #F5F5F9;
-      font-family: "VerdanaRegular", sans-serif;
-      font-size: 16px; }
-    .grey-block .callback-form #contactform input {
-      width: 36%;
-      height: 35px; }
-    .grey-block .callback-form #contactform input[type="submit"] {
-      width: 140px;
-      height: 40px;
-      margin-top: 50px;
-      border: 1px solid #645545;
-      color: #A9A9A9; }
-    .grey-block .callback-form #contactform input[type="submit"]:hover {
-      background-color: #5f492b;
-      cursor: pointer; }
-    .grey-block .callback-form #contactform textarea {
-      width: 56%;
-      height: 28px;
-      margin-left: 7%;
-      margin-bottom: -10px; }
-
-.footer-mnu-block {
-  width: 100%;
-  padding-top: 70px; }
-  .footer-mnu-block .logo-wrap {
-    float: left;
-    margin: -50px 55px 0 30px;
-    text-align: center; }
-  .footer-mnu-block .logo-title {
-    display: inline-block;
-    color: #ffefd4;
-    font-family: "RobotoLight", sans-serif;
-    font-size: 25px;
-    text-transform: uppercase; }
-  .footer-mnu-block ul {
-    float: left;
-    margin-right: 60px; }
-    .footer-mnu-block ul li a {
-      color: #bf9258;
-      line-height: 30px; }
-      .footer-mnu-block ul li a:hover {
-        color: #fff5e5; }
-    .footer-mnu-block ul li:first-child a {
-      font-family: "GeorgiaBold", sans-serif;
-      color: #ecbb7b;
-      line-height: 49px; }
-      .footer-mnu-block ul li:first-child a:hover {
-        color: #fff5e5; }
-  .footer-mnu-block .ft-line {
-    position: relative;
-    left: 250px;
-    margin-top: -20px;
-    width: 77.5%;
-    height: 1px;
-    background-color: #392420; }
-    .footer-mnu-block .ft-line .flower-right-dark {
-      background-image: url(../img/sprites/sprite.png);
-      background-position: -102px -75px;
-      width: 19px;
-      height: 19px;
-      position: absolute;
-      right: 0;
-      top: -9px; }
-
+/* ----------- End Header ------------ */
+/* ------------ Page Main ------------- */
 .slider {
   width: 100%;
   height: 470px; }
@@ -421,33 +317,30 @@ h2 {
       border: none;
       border-top: 3px solid #82190f; }
 
-footer .top-line_sub-block {
-  float: right; }
-
-.content {
+.content-main {
   width: 100%;
   padding: 4.28571% 5%;
   background-color: #fff5e5; }
-  .content span {
+  .content-main span {
     font-size: 38px;
     font-family: "GeorgiaBoldItalic", sans-serif;
     color: #251D1B;
     line-height: 49px; }
-  .content li {
+  .content-main li {
     width: 30.2%;
     float: left;
     margin-top: 50px;
     margin-right: 4.7%; }
-    .content li:nth-child(3n) {
+    .content-main li:nth-child(3n) {
       margin-right: 0; }
-    .content li .img-block {
+    .content-main li .img-block {
       width: 100%;
       height: 205px; }
-    .content li .describe-block {
+    .content-main li .describe-block {
       margin-top: 5px;
       padding: 35px 30px 40px;
       border: 1px solid #e5af51; }
-      .content li .describe-block section {
+      .content-main li .describe-block section {
         height: 100px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -455,13 +348,13 @@ footer .top-line_sub-block {
         font-size: 14px;
         line-height: 24px;
         overflow: hidden; }
-      .content li .describe-block a {
+      .content-main li .describe-block a {
         position: relative;
         font-size: 18px;
         line-height: 24px;
         font-family: "GeorgiaBoldItalic", sans-serif;
         color: #ae7719; }
-        .content li .describe-block a .arrow-right {
+        .content-main li .describe-block a .arrow-right {
           background-image: url(../img/sprites/sprite.png);
           background-position: -121px -75px;
           width: 7px;
@@ -469,16 +362,139 @@ footer .top-line_sub-block {
           position: absolute;
           bottom: 5px;
           left: 115px; }
-        .content li .describe-block a:hover {
+        .content-main li .describe-block a:hover {
           text-decoration: underline; }
-  .content .hotel-describe {
+  .content-main .hotel-describe {
     margin-top: 75px; }
-    .content .hotel-describe section {
+    .content-main .hotel-describe section {
       margin-top: 30px;
       font-family: "RobotoItalic", sans-serif;
       font-size: 16px;
       line-height: 30px; }
 
+/* ------------ End Page Main ------------- */
+/* -------- Page Rooms ----------- */
+.content-rooms {
+  width: 100%;
+  padding: 2.14286% 4.28571% 4.28571%;
+  background-color: #FFF; }
+
+/* -------- End Page Rooms ----------- */
+/* ----------- Footer ------------ */
+.grey-block {
+  padding: 85px 65px 105px 65px;
+  background: #251d1b;
+  border-bottom: 1px solid #514948; }
+  .grey-block h1 {
+    color: #FFF5E5;
+    margin-bottom: 40px; }
+  .grey-block .hotel-photo {
+    width: 41%;
+    padding-left: 40px;
+    padding-right: 30px;
+    float: left; }
+    .grey-block .hotel-photo .photo {
+      background-image: url(../img/sprites/sprite.png);
+      background-position: -78px -75px;
+      width: 24px;
+      height: 30px;
+      float: left;
+      margin-left: -40px; }
+    .grey-block .hotel-photo .gallery-ft {
+      width: 450px; }
+      .grey-block .hotel-photo .gallery-ft li {
+        float: left;
+        width: 150px;
+        height: 100px; }
+        .grey-block .hotel-photo .gallery-ft li a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+  .grey-block .callback-form {
+    width: 59%;
+    float: left;
+    padding-left: 4%; }
+    .grey-block .callback-form .letter {
+      background-image: url(../img/sprites/sprite.png);
+      background-position: -93px -40px;
+      width: 32px;
+      height: 24px;
+      float: left;
+      margin-left: -50px;
+      margin-right: 10px; }
+    .grey-block .callback-form #contactform input, .grey-block .callback-form #contactform textarea {
+      margin-top: 20px;
+      background-color: inherit;
+      border: none;
+      border-bottom: 1px solid #645545;
+      color: #F5F5F9;
+      font-family: "VerdanaRegular", sans-serif;
+      font-size: 16px; }
+    .grey-block .callback-form #contactform input {
+      width: 36%;
+      height: 35px; }
+    .grey-block .callback-form #contactform input[type="submit"] {
+      width: 140px;
+      height: 40px;
+      margin-top: 50px;
+      border: 1px solid #645545;
+      color: #A9A9A9; }
+    .grey-block .callback-form #contactform input[type="submit"]:hover {
+      background-color: #5f492b;
+      cursor: pointer; }
+    .grey-block .callback-form #contactform textarea {
+      width: 56%;
+      height: 28px;
+      margin-left: 7%;
+      margin-bottom: -10px; }
+
+footer .top-line_sub-block {
+  float: right; }
+
+.footer-mnu-block {
+  width: 100%;
+  padding-top: 70px; }
+  .footer-mnu-block .logo-wrap {
+    float: left;
+    margin: -50px 55px 0 30px;
+    text-align: center; }
+  .footer-mnu-block .logo-title {
+    display: inline-block;
+    color: #ffefd4;
+    font-family: "RobotoLight", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase; }
+  .footer-mnu-block ul {
+    float: left;
+    margin-right: 60px; }
+    .footer-mnu-block ul li a {
+      color: #bf9258;
+      line-height: 30px; }
+      .footer-mnu-block ul li a:hover {
+        color: #fff5e5; }
+    .footer-mnu-block ul li:first-child a {
+      font-family: "GeorgiaBold", sans-serif;
+      color: #ecbb7b;
+      line-height: 49px; }
+      .footer-mnu-block ul li:first-child a:hover {
+        color: #fff5e5; }
+  .footer-mnu-block .ft-line {
+    position: relative;
+    left: 250px;
+    margin-top: -20px;
+    width: 77.5%;
+    height: 1px;
+    background-color: #392420; }
+    .footer-mnu-block .ft-line .flower-right-dark {
+      background-image: url(../img/sprites/sprite.png);
+      background-position: -102px -75px;
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      right: 0;
+      top: -9px; }
+
+/* ----------- End Footer ------------ */
 /*==========  Desktop First Method  ========== */
 @media only screen and (max-width: 1400px) {
   .wrapper {
