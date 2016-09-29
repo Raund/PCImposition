@@ -220,43 +220,6 @@ h2 {
 .slider {
   width: 100%;
   height: 470px; }
-  .slider .bxslider .slider-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; }
-  .slider .bx-wrapper .bx-caption .slider-title,
-  .slider .bx-wrapper .bx-caption .slider-title,
-  .slider .bx-wrapper .bx-caption a {
-    display: block;
-    margin: 0 auto;
-    color: #fffafa;
-    line-height: 49px; }
-  .slider .bx-wrapper .bx-caption .slider-title {
-    width: 90%;
-    margin-top: 10%;
-    overflow: hidden;
-    font-size: 39px;
-    font-family: "GeorgiaBoldItalic", sans-serif; }
-  .slider .bx-wrapper .bx-caption hr {
-    margin: 0 auto;
-    width: 500px; }
-  .slider .bx-wrapper .bx-caption .slider-subtitle {
-    font-size: 22px;
-    font-family: "RobotoBold", sans-serif;
-    margin-top: 5px;
-    padding: 0 20px; }
-  .slider .bx-wrapper .bx-caption a {
-    width: 200px;
-    height: 50px;
-    margin-top: 60px;
-    font-size: 22px;
-    font-family: "RobotoRegular", sans-serif;
-    border: 1px solid #fffafa; }
-    .slider .bx-wrapper .bx-caption a:hover {
-      background-color: #e5af51;
-      color: #251D1B;
-      border: 1px solid #e5af51; }
 
 .booking {
   position: relative;
@@ -376,6 +339,7 @@ h2 {
 /* -------- Page Rooms ----------- */
 .content-rooms {
   width: 100%;
+  margin-top: 10px;
   padding: 2.14286% 4.28571% 4.28571%;
   background-color: #FFF; }
   .content-rooms .content-rooms-title {
@@ -407,16 +371,6 @@ h2 {
       float: left;
       width: 26%;
       height: 280px; }
-      .content-rooms .rooms-block .img-block .main-img {
-        width: 100%;
-        height: 225px;
-        background: #fff no-repeat center; }
-      .content-rooms .rooms-block .img-block .other-img {
-        width: 100%; }
-        .content-rooms .rooms-block .img-block .other-img li {
-          float: left;
-          width: 25%;
-          height: 55px; }
     .content-rooms .rooms-block .describe-block {
       float: left;
       width: 57%;
@@ -512,6 +466,8 @@ h2 {
   display: block !important; }
 
 /* -------- End Page Rooms ----------- */
+/* -------- Page Services ----------- */
+/* -------- End Services ----------- */
 /* ----------- Footer ------------ */
 .grey-block {
   padding: 85px 65px 105px 65px;
@@ -532,16 +488,6 @@ h2 {
       height: 30px;
       float: left;
       margin-left: -40px; }
-    .grey-block .hotel-photo .gallery-ft {
-      width: 450px; }
-      .grey-block .hotel-photo .gallery-ft li {
-        float: left;
-        width: 150px;
-        height: 100px; }
-        .grey-block .hotel-photo .gallery-ft li a {
-          display: block;
-          width: 100%;
-          height: 100%; }
   .grey-block .callback-form {
     width: 59%;
     float: left;
@@ -588,7 +534,7 @@ footer .top-line_sub-block {
   padding-top: 70px; }
   .footer-mnu-block .logo-wrap {
     float: left;
-    margin: -50px 55px 0 30px;
+    margin: -70px 30px 0 -10px;
     text-align: center; }
   .footer-mnu-block .logo-title {
     display: inline-block;
@@ -630,7 +576,9 @@ footer .top-line_sub-block {
 /*==========  Desktop First Method  ========== */
 @media only screen and (max-width: 1400px) {
   .wrapper {
-    width: 1200px; } }
+    width: 1200px; }
+  .grey-block .callback-form #contactform {
+    margin-top: -35px; } }
 
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */

@@ -16,9 +16,7 @@
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="libs/bootstrap-grid/dist/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="libs/bxslider/webstudio-bxslider.css">
-	<link rel="stylesheet" href="libs/unitegallery/dist/css/webstudio-unite-gallery.css">
+	<link rel="stylesheet" href="libs/unitegallery/dist/css/unite-gallery.css">
 
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
@@ -89,7 +87,7 @@
 
 					<a href="index.html">Главная</a>
 					<a href="rooms.html">Номера</a>
-					<a href="#">Услуги</a>
+					<a href="services.html">Услуги</a>
 					<a href="#">События</a>
 					<a href="#">Галерея</a>
 					<a href="#">Контакты</a>
@@ -127,7 +125,7 @@
 
 					<div class="img-block">
 
-						<div id="gallery-id-1" class="gallery" style="display:none;">
+						<div id="webstudio-gallery-id-1" class="webstudio-gallery-rooms" style="display:none;">
 		
 							<img alt="Image 2 Title" src="img/slide-2.jpg"
 								data-image="img/slide-2.jpg"
@@ -148,17 +146,6 @@
 
 						</div>
 						
-						<!--<div class="main-img" style="background-image: url(img/main-img.jpg);"></div>
-
-						<ul class="other-img">
-
-							<li style="background-image: url(img/oter-img-1.jpg);"></li>
-							<li style="background-image: url(img/oter-img-2.jpg);"></li>
-							<li style="background-image: url(img/oter-img-1.jpg);"></li>
-							<li style="background-image: url(img/oter-img-2.jpg);"></li>
-
-						</ul>-->
-
 					</div>
 
 					<div class="describe-block">
@@ -250,7 +237,7 @@
 
 					<div class="img-block">
 						
-						<div id="gallery-id-2" class="gallery" style="display:none;">
+						<div id="webstudio-gallery-id-2" class="webstudio-gallery-rooms" style="display:none;">
 		
 							<img alt="Image 1 Title" src="img/slide-1.jpg"
 								data-image="img/slide-1.jpg"
@@ -367,16 +354,33 @@
 
 					<h1>Фото отеля</h1>
 
-					<ul class="gallery-ft clearfix">
+					<div id="webstudio-bottom-gallery" style="display:none;">
 
-						<li style="background: url('../img/gallery-photo-1.jpg') no-repeat center;"><a href="#"></a></li>
-						<li style="background: url('../img/gallery-photo-2.jpg') no-repeat center;"><a href="#"></a></li>
-						<li style="background: url('../img/gallery-photo-1.jpg') no-repeat center;"><a href="#"></a></li>
-						<li style="background: url('../img/gallery-photo-2.jpg') no-repeat center;"><a href="#"></a></li>
-						<li style="background: url('../img/gallery-photo-1.jpg') no-repeat center;"><a href="#"></a></li>
-						<li style="background: url('../img/gallery-photo-2.jpg') no-repeat center;"><a href="#"></a></li>
+						<img alt="Предусматриваем текст слайда c заголовком" src="img/slide-2.jpg"
+							data-image="img/slide-2.jpg"
+							data-description="С кратким описанием и кнопкой подробнее">
 
-					</ul>
+						<img alt="Image 1 Title" src="img/slide-1.jpg"
+							data-image="img/slide-1.jpg"
+							data-description="Image 1 Description">
+
+						<img alt="Предусматриваем текст слайда c заголовком" src="img/service-1.jpg"
+							data-image="img/service-1.jpg"
+							data-description="С кратким описанием и кнопкой подробнее"> 
+						
+						<img alt="Image 1 Title" src="img/gallery-photo-1.jpg"
+							data-image="img/gallery-photo-1.jpg"
+							data-description="Image 1 Description">
+
+						<img alt="Предусматриваем текст слайда c заголовком" src="img/slide-2.jpg"
+							data-image="img/slide-2.jpg"
+							data-description="С кратким описанием и кнопкой подробнее" >
+						
+						<img alt="Image 1 Title" src="img/slide-1.jpg"
+							data-image="img/slide-1.jpg"
+							data-description="Image 1 Description">
+						
+					</div>
 
 				</div>
 
@@ -501,13 +505,15 @@
 	
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/bxslider/webstudio-bxslider.js"></script>
-	<script src="libs/unitegallery/dist/js/unitegallery.js"></script>
-	<script src="libs/unitegallery/dist/themes/default/ug-theme-default.js"></script>
-	<script src="libs/unitegallery/dist/themes/compact/ug-theme-compact.js"></script>
 	<script src="js/common.js"></script>
+	
+	<script src="libs/unitegallery/dist/themes/default/ug-theme-default.js"></script>
+	<script src="libs/unitegallery/dist/themes/slider/ug-theme-slider.js"></script>
+	<script src="libs/unitegallery/dist/themes/tiles/ug-theme-tiles.js"></script>
+	<script src="libs/unitegallery/dist/themes/tilesgrid/ug-theme-tilesgrid.js"></script>
+	<script src="libs/unitegallery/dist/themes/compact/ug-theme-compact.js"></script>
+	<script src="libs/unitegallery/dist/js/unitegallery.js"></script>
 
-	<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
 </body>
 </html>
