@@ -3,7 +3,18 @@
 /* появление и пропадание удобств */
 
   $('.r-tab').on('click', function(){
-    $(this).parent().find('.conveniences-block').toggleClass('active-conveniences');
+    $(this).parent().find('.conveniences-block').toggleClass('webstudio-active');
+    $('.arrow-conveniences').toggleClass('rotate-90');
+  });
+
+  $('.services-title').on('click', function(){
+    $(this).parent().find('.services-hide').toggleClass('webstudio-active');
+    $('.services-arrow').toggleClass('rotate-90');
+  });
+  
+  $('.services-arrow').on('click', function(){
+    $(this).parent().parent().find('.services-hide').toggleClass('webstudio-active');
+    $(this).toggleClass('rotate-90');
   });
 
 /* END появление и пропадание удобств */
@@ -70,11 +81,54 @@
       strippanel_padding_left:0,
       slider_enable_zoom_panel: false,
       slider_control_zoom: false,
-
     });
   });
 
-/* ENDпросмотр фото номеров */
+/* END просмотр фото номеров */
+
+/* просмотр фото услуг */
+
+  var MyWidthServices = $("div.services-hide").width()/4;
+  var MyHeightServices = MyWidthServices/1.5;
+  $('.webstudio-gallery-services').each(function(){
+    $(this).unitegallery({
+    gallery_theme: "tilesgrid",
+    gallery_width:"100%",              //gallery width   
+    grid_space_between_cols:0,
+    grid_space_between_rows:0,
+    grid_space_between_mobile:0,
+    tile_enable_border:false,
+    tile_enable_shadow:false,
+    grid_padding:0,
+    tile_width: MyWidthServices,
+    tile_height: MyHeightServices,
+    grid_num_rows:2,  
+    });
+  });
+
+/* END просмотр фото услуг */
+
+/* просмотр фото услуг */
+
+  var MyWidthEvents = $("div.events-block").width()/4;
+  var MyHeightEvents = MyWidthEvents/1.5;
+  $('.webstudio-gallery-events').each(function(){
+    $(this).unitegallery({
+    gallery_theme: "tilesgrid",
+    gallery_width:"100%",              //gallery width   
+    grid_space_between_cols:0,
+    grid_space_between_rows:0,
+    grid_space_between_mobile:0,
+    tile_enable_border:false,
+    tile_enable_shadow:false,
+    grid_padding:0,
+    tile_width: MyWidthEvents,
+    tile_height: MyHeightEvents,
+    grid_num_rows:2,  
+    });
+  });
+
+/* END просмотр фото услуг */
 
 /* слайдер на главной*/
 
@@ -108,8 +162,8 @@
 
 /* фото отеля в футере */
 
-  var MyWidth = $("div.hotel-photo").width()/3;
-  var MyHeight = MyWidth/1.5;
+  var MyWidthFooter = $("div.hotel-photo").width()/3;
+  var MyHeightFooter = MyWidthFooter/1.5;
   $("#webstudio-bottom-gallery").unitegallery({
     gallery_theme: "tilesgrid",
     gallery_width:"100%",              //gallery width   
@@ -119,8 +173,8 @@
     tile_enable_border:false,
     tile_enable_shadow:false,
     grid_padding:0,
-    tile_width: MyWidth,
-    tile_height: MyHeight,
+    tile_width: MyWidthFooter,
+    tile_height: MyHeightFooter,
     grid_num_rows:2,  
   });
 

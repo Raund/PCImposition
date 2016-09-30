@@ -58,6 +58,31 @@ h2{
 	width: $site-width;
 	margin: 0 auto;
 }
+
+.content-title{
+	position: relative;
+	.category-name{
+		padding-right: 10px;
+		color: #251D1B;
+		font-size: 38px;
+		background: #fff9ef;
+		line-height: 49px;
+		font-family: "GeorgiaBoldItalic", sans-serif;
+	}
+	.content-title-line{
+		width: 100%;
+		margin-top: -20px;
+		height: 1px;
+		background-color: #E5AF51;
+		.flower-right{
+			@include sprite($flower-right);
+			position: absolute;
+			top: 19px;
+			right: 0;
+		}
+	}
+}
+
 /* ----------- End Main Styles ------------ */
 
 /* ----------- Header ------------ */
@@ -343,27 +368,9 @@ h2{
 	margin-top: 10px;
 	padding: 30px/1400px*100% 60px/1400px*100% 60px/1400px*100%;
 	background-color: #FFF;
-	.content-rooms-title{
-		position: relative;
+	.content-title{
 		.category-name{
-			color: #251D1B;
-			font-size: 38px;
-			line-height: 49px;
-			font-family: "GeorgiaBoldItalic", sans-serif;
-		}
-		.content-rooms-line{
-			position: absolute;
-			top: 28px;
-			right: 0;
-			width: 85%;
-			height: 1px;
-			background-color: #E5AF51;
-			.flower-right{
-				@include sprite($flower-right);
-				position: absolute;
-				top: -9px;
-				right: 0;
-			}
+			background: #FFF;
 		}
 	}
 	.rooms-block{
@@ -376,45 +383,46 @@ h2{
 		}
 		.describe-block{
 			float: left;
-			width: 57%;
+			width: 50%;
 			padding-left: 30px;
-			padding-right: 150px;
+			padding-right: 10px;
 			color: #251D1B;
 			h1{
-				font-size: 30px;
+				font-size: em(32px);
 				margin-bottom: 10px;
 			}
 			span{
 				font-family: "RobotoBold", sans-serif;
 				font-size: 16px;
-				line-height: 30px;
+				line-height: em(32px);
 				.qnty{
 					color: #AB7D2F;
 					margin-left: 10px;
 				}
 			}
 			.describe-room{
-				font-size: 14px;
-				line-height: 25px;
+				font-size: em(16px);
+				line-height: em(27px);
 				table{
-					margin-top: 30px;
+					margin-top: 48px;
 					.option-name{
 						font-family: "RobotoBold", sans-serif;
-						font-size: 14px;
-						line-height: 25px;
+						font-size: em(16px);
+						line-height: em(27px);
 						padding-right: 60px;
 					}
 				}
 			}
 		}
 		.price-block{
-			float: left;
-			width: 17%;
-			padding-top: 14%;
+			float: right;
+			width: 22%;
+			padding-top: 14.8%;
+			margin-right: -6px;
 			span{
 				font-family: "RobotoBlack", sans-serif;
-				font-size: 18px;
-				line-height: 49px;
+				font-size: em(20px);
+				line-height: em(51px);
 				.price{
 					color: #e6b359;
 					margin-left: 10px;
@@ -482,16 +490,130 @@ h2{
 		}
 	}
 }
-.active-conveniences{
+.webstudio-active{
 	display: block !important;
+}
+
+.rotate-90{
+	transform: rotate(90deg);	
 }
 /* -------- End Page Rooms ----------- */
 
 /* -------- Page Services ----------- */
+.content-services{
+	width: 100%;
+	margin-top: 10px;
+	padding: 65px/1400px*100% 100px/1400px*100% 90px/1400px*100%;
+	background-color: #fff9ef;
+	.content-title{
+		.category-name{
+			color: #765C4D;
+		}
+	}
+	.services-block{
+		position: relative;
+		width: 100%;
+		padding: 20px 0 38px 0;
+		border-bottom: 1px solid #E5AF51;
+		.services-title{
+			display: inline;
+			padding-right: 15px;
+			color: #765C4D;
+			font-size: 21px;
+			font-family: "RobotoBold", sans-serif;
+			background: #fff9ef;
+			z-index: 2;
+			cursor: pointer;
+		}
+		.service-title-line{
+			width: 100%;
+			height: 1px;
+			background: #000;
+			margin-top: -10px;
+			z-index: 1;
+		}
+		.services-arrow-wrap{
+			position: absolute;
+			top: 29px;
+			right: 0;
+			padding-left: 25px;
+			background-color: #FFF9EF;
+			.services-arrow{
+				@include sprite($arrow-right-services);
+				background-color: #FFF9EF;
+				cursor: pointer;
+			}
+		}
+		.services-hide{
+			display: none;
+			margin-top: 35px;
+			.services-price{
+				float: left;
+				font-size: 14px;
+				line-height: 25px;
+				margin-right: 30px;
+				&-name{
+					color: #765C4C;
+					.services-price-value{
+						margin-left: 10px;
+						color: #1F130E;
+						.price{
+							font-size: 20px;
+							color: #1B100D;
+						}
+					}
+				}
+			}
+			.webstudio-gallery-services{
+				margin-top: 35px;
+				margin-bottom: 45px;
+			}
+		}
+	}
 
+}
+/* -------- End Page Services ----------- */
 
-
-/* -------- End Services ----------- */
+/* -------- Page Events ----------- */
+.content-services{
+	.events-block{
+		width: 100%;
+		padding: 70px 0 50px 0;
+		border-bottom: 1px solid #d0c1ab;
+		h2{
+			display: inline;
+			margin-right: 25px;
+			color: #1A0F0D;
+			font-family: "RobotoBold", sans-serif;
+		}
+		.date-wrap{
+			display: inline-block;
+			line-height: 34px;
+			.calendar{
+				@include sprite($calendar);
+				position: relative;
+				top: 2px;
+				display: inline-block;
+				margin-right: 10px;
+			}
+			.date{
+				color: #765628;
+				font-size: 16px;
+				line-height: 28px;
+				font-family: "VerdanaRegular";
+				text-decoration: underline;
+				vertical-align: top;
+			}
+		}
+		.events-description{
+			margin-top: 10px;
+			margin-bottom: 50px;
+			color: #1A0F0D;
+			line-height: 25px;
+		}
+	}
+}
+/* -------- End Page Events ----------- */
 
 /* ----------- Footer ------------ */
 .grey-block{
