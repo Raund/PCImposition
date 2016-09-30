@@ -1,7 +1,6 @@
  $(function(){
 
 /* появление и пропадание удобств */
-
   $('.r-tab').on('click', function(){
     $(this).parent().find('.conveniences-block').toggleClass('webstudio-active');
     $('.arrow-conveniences').toggleClass('rotate-90');
@@ -16,11 +15,9 @@
     $(this).parent().parent().find('.services-hide').toggleClass('webstudio-active');
     $(this).toggleClass('rotate-90');
   });
-
 /* END появление и пропадание удобств */
 
 /* выбор даты бронирования */
-
     var dateFormat = "dd/mm/yy",
       from = $( "#from" )
         .datepicker({
@@ -54,11 +51,9 @@
  
       return date;
     }
-
 /* END выбор даты бронирования */
 
 /* просмотр фото номеров */
-
   $('.webstudio-gallery-rooms').each(function(){
     $(this).unitegallery({
       gallery_theme: "compact",
@@ -83,36 +78,12 @@
       slider_control_zoom: false,
     });
   });
-
 /* END просмотр фото номеров */
 
-/* просмотр фото услуг */
-
-  var MyWidthServices = $("div.services-hide").width()/4;
-  var MyHeightServices = MyWidthServices/1.5;
-  $('.webstudio-gallery-services').each(function(){
-    $(this).unitegallery({
-    gallery_theme: "tilesgrid",
-    gallery_width:"100%",              //gallery width   
-    grid_space_between_cols:0,
-    grid_space_between_rows:0,
-    grid_space_between_mobile:0,
-    tile_enable_border:false,
-    tile_enable_shadow:false,
-    grid_padding:0,
-    tile_width: MyWidthServices,
-    tile_height: MyHeightServices,
-    grid_num_rows:2,  
-    });
-  });
-
-/* END просмотр фото услуг */
-
-/* просмотр фото услуг */
-
-  var MyWidthEvents = $("div.events-block").width()/4;
-  var MyHeightEvents = MyWidthEvents/1.5;
-  $('.webstudio-gallery-events').each(function(){
+/* просмотр фото на страницах Услуги, События, Галерея */  
+  $('.webstudio-gallery').each(function(){
+    var MyWidthEvents = $(this).parent().width()/4;
+    var MyHeightEvents = MyWidthEvents/1.5;
     $(this).unitegallery({
     gallery_theme: "tilesgrid",
     gallery_width:"100%",              //gallery width   
@@ -124,14 +95,13 @@
     grid_padding:0,
     tile_width: MyWidthEvents,
     tile_height: MyHeightEvents,
-    grid_num_rows:2,  
+    grid_num_rows:10,  
     });
   });
 
-/* END просмотр фото услуг */
+/* END просмотр фото на страницах Услуги, События, Галерея */  
 
 /* слайдер на главной*/
-
   var sliderApi = $("#webstudio-slider").unitegallery({
     gallery_theme: "slider",
     gallery_width:"100%",              //gallery width   
@@ -157,11 +127,9 @@
     slider_arrow_left_offset_hor:60,
     slider_arrow_right_offset_hor:60,
   });
-
 /* END слайдер на главной*/
 
 /* фото отеля в футере */
-
   var MyWidthFooter = $("div.hotel-photo").width()/3;
   var MyHeightFooter = MyWidthFooter/1.5;
   $("#webstudio-bottom-gallery").unitegallery({
@@ -177,7 +145,6 @@
     tile_height: MyHeightFooter,
     grid_num_rows:2,  
   });
-
 /* END фото отеля в футере */
 
   /*sliderApi.on("item_change", function(num, data){

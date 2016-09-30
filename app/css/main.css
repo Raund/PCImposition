@@ -573,6 +573,20 @@ h2 {
     line-height: 25px; }
 
 /* -------- End Page Events ----------- */
+/* -------- Page Gallery ----------- */
+.content-services .content-title .gallery-name {
+  color: #D9A64E; }
+
+.content-services .gallery-block {
+  width: 100%;
+  padding: 40px 0;
+  border-bottom: 1px solid #d0c1ab; }
+  .content-services .gallery-block h2 {
+    margin-bottom: 30px;
+    color: #1A0F0D;
+    font-family: "RobotoBold", sans-serif; }
+
+/* -------- End Page Gallery ----------- */
 /* ----------- Footer ------------ */
 .grey-block {
   padding: 85px 65px 105px 65px;
