@@ -19,9 +19,9 @@ a:hover{
 }
 
 ul{
-  list-style: none;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 .hidden {
   display: none;
@@ -43,15 +43,15 @@ body{
 }
 
 h1{
-	font-size: 25px;
-	font-family: "GeorgiaBoldItalic", sans-serif;
 	color: #251D1B;
+	font-size: em(27px);
+	font-family: "GeorgiaBoldItalic", sans-serif;
 }
 
 h2{
-	font-size: 21px;
-	font-family: "GeorgiaBoldItalic", sans-serif;
 	color: #fffafa;
+	font-size: em(23px);
+	font-family: "GeorgiaBoldItalic", sans-serif;
 }
 
 .wrapper{
@@ -63,16 +63,16 @@ h2{
 	position: relative;
 	.category-name{
 		padding-right: 10px;
-		color: #251D1B;
-		font-size: 38px;
 		background: #fff9ef;
-		line-height: 49px;
+		color: #251D1B;
 		font-family: "GeorgiaBoldItalic", sans-serif;
+		font-size: em(40px);
+		line-height: 49px;
 	}
 	.content-title-line{
 		width: 100%;
-		margin-top: -20px;
 		height: 1px;
+		margin-top: -20px;
 		background-color: #E5AF51;
 		.flower-right{
 			@include sprite($flower-right);
@@ -83,6 +83,13 @@ h2{
 	}
 }
 
+.webstudio-active{
+	display: block !important;
+}
+
+.rotate-90{
+	transform: rotate(90deg);	
+}
 /* ----------- End Main Styles ------------ */
 
 /* ----------- Header ------------ */
@@ -109,11 +116,11 @@ h2{
 	}
 	a{
 		padding-bottom: 3px;
-		font-family: "GeorgiaBold", sans-serif;
-		font-size: 16px;
 		color: #FFF;
+		font-family: "GeorgiaBold", sans-serif;
+		font-size: em(18px);
+		line-height: em(38px);
 		text-decoration: none;
-		line-height: 36px;
 		&:hover{
 			border-bottom: 1px solid #e5af51;	
 		}
@@ -142,7 +149,7 @@ h2{
 			.phone-desc{
 				display: inline-block;
 				margin-left: 18px;
-				font-size: 12px;
+				font-size: em(12px);
 			}
 		}
 	}
@@ -154,17 +161,17 @@ h2{
 			display: inline-block;
 			border-left: 2px solid #844233;
 			padding: 0 7px;
-			line-height: 16px;
+			line-height: em(18px);
 			&:first-child{
 				border-left: none;
 			}
 			a{
+				padding-bottom: 0;
+				border-bottom: none;
 				color: #E7B055;
 				font-family: "RobotoRegular", sans-serif;
-				font-size: 16px;
-				border-bottom: none;
-				line-height: 16px;
-				padding-bottom: 0;
+				font-size: em(18px);
+				line-height: em(18px);
 				&:hover, &:focus{
 					color: #FFFAFA;
 				}
@@ -180,12 +187,12 @@ h2{
 	text-align: center;
 	nav{
 		a{
-			margin-right: 75px;
-			border-bottom: 3px solid #bcb1a4;
+			margin-right: 6%;
 			padding-bottom: 8px;			
+			border-bottom: 3px solid #bcb1a4;
 			color: $lnk-mnu;
 			font-family: "GeorgiaBold", sans-serif;
-			font-size: 16px;
+			font-size: em(18px);
 			&:hover, &:active{
 				color: $lnk-mnu-hover;
 				border-bottom: 3px solid #cfa56b;
@@ -194,19 +201,19 @@ h2{
 				margin-right: 0;
 			}
 			&:nth-child(3){
-				margin-right: 300px;
+				margin-right: 25%;
 			}
 		}
 	}
 	.logo-wrap{
-		margin-top: -90px;
+		margin-top: -75px;
 	}
 	.logo-title{
 		display: inline-block;
 		margin: 5px 40px 0 40px;
 		color: #e3ad4d;
 		font-family: "RobotoLight", sans-serif;
-		font-size: 35px;
+		font-size: em(37px);
 		text-transform: uppercase;
 	}
 	.flower-left, .flower-right{
@@ -255,23 +262,23 @@ h2{
 		    padding-right: 2.5%;
 		    padding-top: 5px;
 		    color: #8D6C38;
-		    font-size: 15px;
-		    line-height: 20px;
+		    font-size: em(17px);
 		    font-family: "VerdanaRegular", sans-serif;
+		    line-height: em(22px);
 		}
 		.arrival-date, .departure-date{
 			display: block;
 			float: left;
 			width: 18%;
 			height: 55px;
-			padding-left: 7%;
+			padding-left: 6%;
 			border: 1px solid #645545;
 			background: url('../img/input-bg.png') no-repeat 15px center;
 			background-color: inherit;
 			color: #F5F5F9;
-			font-size: 16px;
-			line-height: 46px;
+			font-size: em(18px);
 			font-family: "VerdanaRegular", sans-serif;
+			line-height: em(48px);
 		}
 		.booking-btn{
 			width: 16%;
@@ -281,9 +288,9 @@ h2{
 			border: none;
 			border-bottom: 3px solid #9e1c12;
 			color: #FDFDFD;
-			cursor: pointer;
-			font-size: 18px;
+			font-size: em(20px);
 			font-family: "VerdanaRegular", sans-serif;
+			cursor: pointer;
 			&:hover{
 				background-color: #ed2614;
 				border-bottom: 3px solid #96180d;
@@ -302,9 +309,9 @@ h2{
 	padding: 60px/$site-width*100% 70px/$site-width*100%;
 	background-color: #fff5e5;
 	span{
-		font-size: 38px;
-		font-family: "GeorgiaBoldItalic", sans-serif;
 		color: #251D1B;
+		font-size: em(40px);
+		font-family: "GeorgiaBoldItalic", sans-serif;
 		line-height: 49px;
 	}
 	li{
@@ -323,25 +330,29 @@ h2{
 			margin-top: 5px;
 			padding: 35px 30px 40px;
 			border: 1px solid #e5af51;
+			h1{
+				max-height: 29px;
+				overflow: hidden;
+			}
 			section{
 				height: 100px;
 				margin-top: 20px;
 				margin-bottom: 20px;
 				font-family: "RobotoItalic", sans-serif;
-				font-size: 14px;
-				line-height: 24px;
+				font-size: em(16px);
+				line-height: em(30px);
 				overflow: hidden;
 			}
 			a{
 				position: relative;
-				font-size: 18px;
-				line-height: 24px;
-				font-family: "GeorgiaBoldItalic", sans-serif;
 				color: #ae7719;
+				font-size: em(20px);
+				font-family: "GeorgiaBoldItalic", sans-serif;
+				line-height: em(26px);
 				.arrow-right{
 					@include sprite($arrow-right);
 					position: absolute;
-					bottom: 5px;
+					bottom: 3px;
 					left: 115px;
 				}
 				&:hover{
@@ -355,8 +366,8 @@ h2{
 		section{
 			margin-top: 30px;
 			font-family: "RobotoItalic", sans-serif;
-			font-size: 16px;
-			line-height: 30px;
+			font-size: em(18px);
+			line-height: em(32px);
 		}
 	}
 }
@@ -388,12 +399,12 @@ h2{
 			padding-right: 10px;
 			color: #251D1B;
 			h1{
-				font-size: em(32px);
 				margin-bottom: 10px;
+				font-size: em(32px);
 			}
 			span{
 				font-family: "RobotoBold", sans-serif;
-				font-size: 16px;
+				font-size: em(18px);
 				line-height: em(32px);
 				.qnty{
 					color: #AB7D2F;
@@ -406,10 +417,10 @@ h2{
 				table{
 					margin-top: 48px;
 					.option-name{
+						padding-right: 60px;
 						font-family: "RobotoBold", sans-serif;
 						font-size: em(16px);
 						line-height: em(27px);
-						padding-right: 60px;
 					}
 				}
 			}
@@ -417,15 +428,15 @@ h2{
 		.price-block{
 			float: right;
 			width: 22%;
-			padding-top: 14.8%;
 			margin-right: -6px;
+			padding-top: 14.8%;
 			span{
 				font-family: "RobotoBlack", sans-serif;
 				font-size: em(20px);
 				line-height: em(51px);
 				.price{
-					color: #e6b359;
 					margin-left: 10px;
+					color: #e6b359;
 				}
 			}
 			.booking-btn-in-rooms{
@@ -434,22 +445,22 @@ h2{
 				height: 55px;
 				margin-left: 17%;
 				padding-top: 15px;
-				background-color: #d82718;
 				border: none;
 				border-bottom: 3px solid #9e1c12;
+				background-color: #d82718;
 				color: #FDFDFD;
-				cursor: pointer;
 				text-align: center;
-				font-size: 18px;
+				font-size: em(20px);
 				font-family: "VerdanaRegular", sans-serif;
+				cursor: pointer;
 				&:hover{
-					background-color: #ed2614;
 					border-bottom: 3px solid #96180d;
+					background-color: #ed2614;
 				}
 				&:active{
-					background-color: #ce2718;
 					border: none;
 					border-top: 3px solid #82190f;
+					background-color: #ce2718;
 				}
 			}
 		}
@@ -462,9 +473,9 @@ h2{
 			span{
 				border-bottom: 1px dotted #B38F6F;
 				color: #b38f6f;
-				font-size: 21px;
-				line-height: 21px;
+				font-size: em(23px);
 				font-family: "RobotoBold", sans-serif;
+				line-height: 21px;
 			}
 			.arrow-conveniences{
 				@include sprite($arrow-right-rooms);
@@ -477,30 +488,24 @@ h2{
 			padding: 30px 30px 40px 30px;
 			background: #f2f2f2;
 			ul{
-				width: 33.3%;
 				float: left;
-				font-size: 13px;
-				line-height: 30px;
+				width: 33.3%;
+				padding-right: 2%;
+				font-size: em(15px);
 				font-family: "RobotoRegular", sans-serif;
+				line-height: em(32px);
 				li{
-					background: url('../img/list-style.png') no-repeat left 14px;
 					padding-left: 10px;
+					background: url('../img/list-style.png') no-repeat left 14px;
 				}
 			}
 		}
 	}
 }
-.webstudio-active{
-	display: block !important;
-}
-
-.rotate-90{
-	transform: rotate(90deg);	
-}
 /* -------- End Page Rooms ----------- */
 
 /* -------- Page Services ----------- */
-.content-services{
+.content{
 	width: 100%;
 	margin-top: 10px;
 	padding: 65px/1400px*100% 100px/1400px*100% 90px/1400px*100%;
@@ -518,19 +523,18 @@ h2{
 		.services-title{
 			display: inline;
 			padding-right: 15px;
-			color: #765C4D;
-			font-size: 21px;
-			font-family: "RobotoBold", sans-serif;
 			background: #fff9ef;
+			color: #765C4D;
+			font-size: em(23px);
+			font-family: "RobotoBold", sans-serif;
 			z-index: 2;
 			cursor: pointer;
 		}
 		.service-title-line{
 			width: 100%;
 			height: 1px;
-			background: #000;
 			margin-top: -10px;
-			z-index: 1;
+			background: #000;
 		}
 		.services-arrow-wrap{
 			position: absolute;
@@ -547,10 +551,10 @@ h2{
 		.services-hide{
 			display: none;
 			margin-top: 35px;
+			font-size: em(16px);
+			line-height: em(27px);
 			.services-price{
 				float: left;
-				font-size: 14px;
-				line-height: 25px;
 				margin-right: 30px;
 				&-name{
 					color: #765C4C;
@@ -558,13 +562,13 @@ h2{
 						margin-left: 10px;
 						color: #1F130E;
 						.price{
-							font-size: 20px;
+							font-size: em(22px);
 							color: #1B100D;
 						}
 					}
 				}
 			}
-			.webstudio-gallery-services{
+			.webstudio-gallery{
 				margin-top: 35px;
 				margin-bottom: 45px;
 			}
@@ -575,7 +579,7 @@ h2{
 /* -------- End Page Services ----------- */
 
 /* -------- Page Events ----------- */
-.content-services{
+.content{
 	.events-block{
 		width: 100%;
 		padding: 70px 0 50px 0;
@@ -588,19 +592,19 @@ h2{
 		}
 		.date-wrap{
 			display: inline-block;
-			line-height: 34px;
+			line-height: em(36px);
 			.calendar{
 				@include sprite($calendar);
 				position: relative;
-				top: 2px;
 				display: inline-block;
+				top: 2px;
 				margin-right: 10px;
 			}
 			.date{
 				color: #765628;
-				font-size: 16px;
-				line-height: 28px;
+				font-size: em(18px);
 				font-family: "VerdanaRegular";
+				line-height: em(30px);
 				text-decoration: underline;
 				vertical-align: top;
 			}
@@ -609,14 +613,14 @@ h2{
 			margin-top: 10px;
 			margin-bottom: 50px;
 			color: #1A0F0D;
-			line-height: 25px;
+			line-height: em(27px);
 		}
 	}
 }
 /* -------- End Page Events ----------- */
 
 /* -------- Page Gallery ----------- */
-.content-services{
+.content{
 	.content-title{
 		.gallery-name{
 			color: #D9A64E;
@@ -640,26 +644,26 @@ h2{
 	width: 100%;
 	margin-bottom: 25px;
 }
-.content-services{
+.content{
 	.contact-block{
 		width: 100%;
 		padding: 40px 0 0 0;
 		.contact-item{
-			width: 40%;
 			float: left;
+			width: 40%;
 			margin-right: 10%;
 			li{
 				padding: 25px 0;
-				line-height: em(32px);
 				font-size: em(20px);
 				font-family: "RobotoItalic", sans-serif;
+				line-height: em(32px);
 				.data{
+					float: left;
 					width: 85%;
 					padding-bottom: 10px;
 					border-bottom: 1px solid #e9d0a5;
-					float: left;
+					line-height: em(26px);
 					overflow: hidden;
-					line-height: 28px;
 				}
 			}
 			.map-label-contact{
@@ -693,14 +697,14 @@ h2{
 	background: #251d1b;
 	border-bottom: 1px solid #514948;
 	h1{
-		color: #FFF5E5;
 		margin-bottom: 40px;
+		color: #FFF5E5;
 	}
 	.hotel-photo{
+		float: left;
 		width: 41%;
 		padding-left: 40px;
 		padding-right: 30px;
-		float: left;
 		.photo{
 			@include sprite($photo);
 			float: left;
@@ -708,8 +712,8 @@ h2{
 		}
 	}
 	.callback-form{
-		width: 59%;
 		float: left;
+		width: 59%;
 		padding-left: 4%;
 		.letter{
 			@include sprite($letter);
@@ -725,7 +729,7 @@ h2{
 				border-bottom: 1px solid #645545;
 				color: #F5F5F9;
 				font-family: "VerdanaRegular", sans-serif;
-				font-size: 16px;
+				font-size: em(18px);
 			}
 			input{
 				width: 36%;
@@ -781,15 +785,15 @@ footer{
 		li{
 			a{
 				color: $lnk-submnu-ft;
-				line-height: 30px;
+				line-height: em(32px);
 				&:hover{
 					color: $lnk-mnu-ft-hover;
 				}	
 			}
 			&:first-child a{
-				font-family: "GeorgiaBold", sans-serif;
 				color: $lnk-mnu-ft;
-				line-height: 49px;
+				font-family: "GeorgiaBold", sans-serif;
+				line-height: em(49px);
 				&:hover{
 					color: $lnk-mnu-ft-hover;
 				}	
@@ -798,10 +802,10 @@ footer{
 	}
 	.ft-line{
 		position: relative;
-		left: 250px;
-		margin-top: -20px;
 		width: 77.5%;
 		height: 1px;
+		left: 250px;
+		margin-top: -20px;
 		background-color: #392420;
 		.flower-right-dark{
 			@include sprite($flower-right-dark);
