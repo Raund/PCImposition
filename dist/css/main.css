@@ -776,7 +776,7 @@ footer .top-line_sub-block {
 /*==========  Desktop First Method  ========== */
 @media only screen and (max-width: 1400px) {
   .wrapper {
-    width: 1000px; }
+    width: 1200px; }
   .grey-block .callback-form #contactform {
     margin-top: -35px; } }
 

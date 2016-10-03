@@ -232,6 +232,22 @@ h2{
 .slider{
 	width: 100%;
 	height: 470px;
+	.ug-arrow-right.ug-skin-default{ 
+		@include sprite($bx-next);
+		z-index: 5;
+		&:hover{
+			@include sprite($bx-next);
+			opacity: 0.5;
+		}
+	}
+	.ug-arrow-left.ug-skin-default{
+		@include sprite($bx-prev);
+		z-index: 5;
+		&:hover{
+			@include sprite($bx-prev);
+			opacity: 0.5;
+		}
+	}
 }
 
 .booking{
